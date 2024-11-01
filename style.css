@@ -1,0 +1,304 @@
+/*UNIVERSAL*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Flex", sans-serif;
+
+}
+
+/*TITULOS*/
+h1{
+    color: blue;
+    font-size: xx-large;
+    
+}
+h2{
+    font-size: x-large;
+    color: cornflowerblue;
+    
+}
+h3{
+    font-size:large;
+    color: rgb(175, 175, 244);
+}
+/*ENCABEZADO*/
+header{
+    background: linear-gradient(to right, antiquewhite 70%, black);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titulo{
+    padding: 0 0 0 10px;
+}
+
+/*ENCABEZADO MENU*/
+li{
+    display: inline-block;
+    list-style: none;
+    }
+
+.menu a{
+    text-decoration: none;
+    color:crimson;
+    padding-right: 10px;
+    justify-content: end;
+}
+
+/*PRINCIPAL*/
+main{
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(IMG/LogoPerfumes.jpg);
+    background-position: center;
+}
+/*SEPARACION*/
+.nosotros-contenedor{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+
+/*SEPARACION TEXTO*/
+.nosotros-texto{
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+
+.nosotros-texto p{
+    background-color: beige;
+    border: 2px dashed salmon;
+    padding: 10px;
+    
+
+}
+/*SEPARACION IMAGEN*/
+.nosotros-imagen{
+    padding: 10px;
+    margin: 10px;
+}
+.nosotros-imagen img{
+    width: 500px;
+    height: auto;
+}
+
+/*TARJETA*/
+.tarjetas{
+    display: flex;
+}
+
+.card{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.contenido-tarjeta img{
+    width: 150px;
+    height: 150px;
+}
+
+.pie-tarjeta{
+    background-color: lightgray;
+    margin: 10px 0 0 0;
+}
+
+.pie-tarjeta a button{
+    border-radius: 50px;
+    
+}
+.contenido-tarjeta p{
+    font-style: italic;
+}
+
+
+/* SECUNDARIO*/
+aside{
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(white, blue, grey);
+}
+.recomendaciones-video iframe{
+    width: 600px;
+    height: 250px;
+}
+article{
+    text-align:center;
+    padding-top: 10px;
+    background: linear-gradient(grey, greenyellow);
+}
+
+/*TABLA*/
+table, th, td{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    width: 50%;
+    background-color:lightgrey;
+    
+    
+}
+table img{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/*FORMULARIO*/
+.titulo-form{
+    margin: 10px;
+}
+.formulario{
+display: grid;
+border: 1px solid gray;
+padding: 10px;
+background-color: lightgrey;
+gap: 5px;
+width: 350px;
+}
+
+.contactos{
+    padding: 30px;
+}
+
+#mensaje{
+/*    min-width: 350px; */
+    max-width: 350px;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.resenias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: linear-gradient(greenyellow, aquamarine);
+}
+
+.card-resenia-1,
+.card-resenia-2,
+.card-resenia-3,
+.card-resenia-4,
+.card-resenia-5,
+.card-resenia-6{
+    border: 1px dashed greenyellow;
+    padding: 5px;
+    margin: 5px;
+    /*width: 300px;
+    height: 150px;*/
+}
+.card-resenia-1{
+    color: royalblue ;
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+   
+}
+.card-resenia-2{
+    color: rgb(31, 86, 252) ;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+   
+}
+.card-resenia-3{
+    color: rgb(10, 67, 239) ;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   
+}
+.card-resenia-4{
+    color: rgb(170, 188, 241) ;
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.card-resenia-5{
+    color: rgb(63, 77, 118) ;
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.card-resenia-6{
+    color: rgb(43, 68, 145) ;
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+cite{
+    color: darkgrey;
+}
+
+footer{
+    background-color: aquamarine;
+    
+}
+
+.contactos-link{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+
+@media (max-width: 800px){
+    .nosotros-contenedor,
+    .tarjetas{
+        flex-direction: column;
+        justify-items: center;
+    }
+     
+}
+
+@media (max-width: 800px){
+    .resenias{
+        display: block;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 800px){
+    header{
+        display: block;
+        justify-items: center;
+        height: auto;
+    }
+}
+
+@media  (max-width: 600px) {
+    .formulario,
+    .nosotros-texto
+    {
+        width: auto;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .nosotros-imagen img,
+    .recomendaciones-video iframe{
+        width: 50vh;
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+    background-image: none;
+    background: linear-gradient(black 1%,antiquewhite 30%, white);
+    }
+}
